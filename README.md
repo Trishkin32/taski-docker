@@ -13,7 +13,7 @@ taski - сервис для любителей котиков.
 1. Клонируйте репозиторий на свой компьютер:
 
     ```bash
-    git clone https://github.com/klassnenkiy/taski-docker.git
+    git clone https://github.com/trishkin32/taski-docker.git
     ```
     ```bash
     cd taski_final
@@ -27,19 +27,19 @@ taski - сервис для любителей котиков.
 
     ```bash
     cd backend
-    docker build -t tyulyagin/taski_backend .
+    docker build -t lichen32/taski_backend .
     cd frontend
-    docker build -t tyulyagin/taski_frontend .
+    docker build -t lichen32/taski_frontend .
     cd gateway
-    docker build -t tyulyagin/taski_gateway . 
+    docker build -t lichen32/taski_gateway . 
     ```
 
 2. Загрузите образы на DockerHub:
 
     ```bash
-    docker push tyulyagin/taski_backend
-    docker push tyulyagin/taski_frontend
-    docker push tyulyagin/taski_gateway
+    docker push lichen32/taski_backend
+    docker push lichen32/taski_frontend
+    docker push lichen32/taski_gateway
     ```
 
 ### Деплой на сервере
@@ -47,9 +47,7 @@ taski - сервис для любителей котиков.
 1. Подключитесь к удаленному серверу
 
     ```bash
-    ssh -i /home/ea703557/Загрузки/555/yc-ea703557 yc-user@158.160.28.33
-key NRjeSf
- имя_пользователя@ip_адрес_сервера 
+ssh -i путь_до_файла_с_SSH_ключом/название_файла_закрытого_SSH-ключа login@ip 
     ```
 
 2. Создайте на сервере директорию taski через терминал
